@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT | Web Final</title>
+    <link rel="icon" sizes="192x192" href="icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        /* 定义鼠标悬停时导航链接的颜色变化 */
+        .nav-link:hover {
+            color: rgb(102, 102, 102);
+            /* 您可以将 red 替换为您希望的任何颜色 */
+        }
+
+        .box1 {
+            height: 200px;
+        }
+
+        .box2 {
+            height: 250px;
+            height: auto;
+            /* 保持圖片比例 */
+            max-height: 100%;
+            /* 確保圖片不會超出容器高度 */
+            object-fit: contain;
+            /* 確保圖片完全顯示且不變形 */
+        }
+
+        .box3 {
+            width: 50px;
+        }
+
+        .line1 {
+            background-color: rgb(32, 43, 116);
+            height: 1px;
+        }
+
+        /* 定义页脚背景颜色 */
+        footer {
+            background-color: rgb(32, 43, 116);
+        }
+
+        /* 确保下拉菜单在悬停时显示 */
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+            /* 避免因位移造成闪烁 */
+        }
+
+        .box {
+            background-color: aqua;
+            height: 250px;
+        }
+    </style>
+    <style>
+        .custom-btn {
+            background-color: rgb(32, 43, 116);
+            /* 自定义背景颜色 */
+            color: white;
+            /* 自定义字体颜色 */
+            border-radius: 40px;
+            /* 自定义圆角 */
+            padding: 25px 100px;
+            /* 自定义内边距 */
+            border: none;
+            /* 移除边框 */
+        }
+
+        .custom-btn:hover {
+            background-color: #0b68cc;
+            /* 鼠标悬停时的背景颜色 */
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <img src="icon.png" alt="Icon" width="40" height="32" class="me-2">
+                <span class="fs-4">Web Final</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">HOME</a></li>
+                <li class="nav-item dropdown">
+                    <a href="works.html" class="nav-link dropdown-toggle" id="worksDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">WORKS</a>
+                    <ul class="dropdown-menu " aria-labelledby="worksDropdown">
+                        <li><a class="dropdown-item" href="work1.html">角色設計</a></li>
+                        <li><a class="dropdown-item" href="work2.html">動態貼圖</a></li>
+                        <li><a class="dropdown-item" href="work3.html">人物插畫</a></li>
+                        <li><a class="dropdown-item" href="work4.html">Q版</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" id="ServiceDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">SERVICE</a>
+                    <ul class="dropdown-menu " aria-labelledby="ServiceDropdown">
+                        <li><a class="dropdown-item" href="service.html">委託類型</a></li>
+                        <li><a class="dropdown-item" href="service2.html">流程&注意事項</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <div class="container mx-auto ">
+        <!-- About Me -->
+        <div class="row ">
+            <div class="col">
+                <div class="box1 text-center align-content-end">
+                    <h1>
+                        <img src="icon.png" alt="Icon" height="55" class="me-2">
+                        <b>About Me</b>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Me -->
+        <div class="row gx-5 my-5 flex-column align-items-center flex-md-row">
+            <div class="col-6 col-md-5">
+                <div class="box2 text-end align-content-center">
+                    <img src="me.png" alt="" class="w-100">
+                </div>
+            </div>
+            <div class="col-7 my-5">
+                <div class="box2 align-content-center text-center text-md-start">
+                    <h4><b>Chiu Wan-Chu / Slug</b></h4>
+                    <h5><b>Web Final</b></h5>
+                    總之先隨便湊一些字ygV&KclBRhoaopIKLLsqJwqtq,
+                    owTyNiTygV&KclBRhoao, pIKLLsqJwqtqowT,
+                    yNiTygV&KclBRho, aopIKLLsqJwqtqowTyNiT.
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="row">
+            <div class="col">
+                <div class="box1 text-center align-content-end">
+                    <h1 class="mb-0">
+                        <img src="icon.png" alt="Icon" height="55" class="me-2">
+                        <b>Contact</b>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="container full-height d-flex justify-content-center align-items-center my-5">
+            <a href="contact.html" class="btn custom-btn text-white">聯絡我→</a>
+        </div>
+
+        <!-- icon -->
+        <div class="container my-4">
+            <div class="row justify-content-center mt-3 mb-5">
+              <div class="col-1 box3 mx-2">
+                <a href="mailto:sarahchiu0816@gmail.com">
+                  <img class="w-100" src="gmail.ico" alt="Gmail">
+                </a>
+              </div>
+              <div class="col-1 box3 mx-2">
+                <a href="https://x.com/fz_wa6">
+                  <img class="w-100" src="twitter.3.ico" alt="Twitter">
+                </a>
+              </div>
+              <div class="col-1 box3 mx-2">
+                <a href="https://www.facebook.com/profile.php?id=100061031540371">
+                  <img class="w-100" src="aGT3gskzWBf.ico" alt="FB">
+                </a>
+              </div>
+              <div class="col-1 box3 mx-2">
+                <a href="https://www.instagram.com/kuoyu.ouo/">
+                  <img class="w-100" src="QaBlI0OZiks.ico" alt="IG">
+                </a>
+              </div>
+              <div class="col-1 box3 mx-2">
+                <a href="discordapp.com/users/.imasluuug">
+                  <img class="w-100" src="discord.png" alt="Discord">
+                </a>
+              </div>
+            </div>
+          </div>
+
+    </div>
+
+    <div class="box1"></div>
+
+    <footer class="py-3 mt-5">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="work1.html" class="nav-link px-2 text-muted">Works</a></li>
+            <li class="nav-item"><a href="service.html" class="nav-link px-2 text-muted">Service</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-muted">Contact</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2024 abc123, idk</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
